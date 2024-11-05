@@ -1,9 +1,11 @@
 (() => {
-    for (let count; count <= 1000; count++) {
-        let span = document.createElement("span");
-        span.innerText = "What have you done?";
+    const container = document.getElementById("container");
 
-        document.appendChild(span);
+    for (let count = 0; count <= 100; count++) {
+        let p = document.createElement("p");
+        p.innerText = "What have you done?";
+
+        container.appendChild(p);
     }
 
     console.log("working...");
